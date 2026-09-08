@@ -73,7 +73,8 @@ p { margin: 0 0 1em; }
   transition: background .3s, border-color .3s, box-shadow .3s;
 }
 .header.is-scrolled { background: rgba(255,255,255,.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-color: var(--line); box-shadow: 0 6px 24px rgba(15,44,74,.06); }
-.header:not(.is-scrolled) .brand, .header:not(.is-scrolled) .brand-mark, .header:not(.is-scrolled) .nav a:not(.btn) { color: #fff; }
+.header:not(.is-scrolled) { background: linear-gradient(180deg, rgba(6,20,38,.82) 0%, rgba(6,20,38,.45) 60%, rgba(6,20,38,0) 100%); padding-bottom: 14px; }
+.header:not(.is-scrolled) .brand, .header:not(.is-scrolled) .brand-mark, .header:not(.is-scrolled) .nav a:not(.btn) { color: #fff; text-shadow: 0 1px 8px rgba(0,0,0,.5); }
 .header:not(.is-scrolled) .brand-tag { color: rgba(255,255,255,.7); }
 .header:not(.is-scrolled) .nav a:not(.btn)::after { background: var(--thread); }
 .header:not(.is-scrolled) .nav .btn-primary { background: #fff; color: var(--blue-deep); box-shadow: none; }
@@ -124,7 +125,11 @@ p { margin: 0 0 1em; }
   content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
   background: radial-gradient(60% 70% at 50% 52%, rgba(10,30,52,.72) 0%, rgba(10,30,52,.45) 45%, transparent 78%);
 }
-.hero-inner { position: relative; z-index: 2; max-width: 54rem; }
+.hero-inner {
+  position: relative; z-index: 2; max-width: 56rem; padding: 3rem 3.4rem 2.8rem;
+  background: rgba(6,20,38,.5); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,.14); border-radius: 28px; box-shadow: 0 30px 80px rgba(0,0,0,.35);
+}
 .eyebrow-light { color: var(--thread); }
 .eyebrow-light::before { background-image: repeating-linear-gradient(90deg, var(--thread) 0 5px, transparent 5px 8px); }
 .hero h1 { font-size: clamp(2.5rem, 5.4vw, 4.6rem); font-weight: 700; color: #fff; text-shadow: 0 4px 30px rgba(0,0,0,.45); }
@@ -346,7 +351,8 @@ p { margin: 0 0 1em; }
   .nav-toggle { display: flex; }
   .header:not(.is-scrolled) .nav.open a:not(.btn) { color: var(--ink-soft); }
   .header:not(.is-scrolled) .nav.open .btn-primary { background: var(--blue); color: #fff; }
-  .hero { min-height: 0; padding: calc(76px + 3.5rem) 0 8rem; }
+  .hero { min-height: 0; padding: calc(76px + 2.5rem) 0 8rem; }
+  .hero-inner { padding: 2.2rem 1.3rem 2rem; border-radius: 22px; }
   .photo-strip { margin-top: -5rem; }
   .photo-track img { width: 220px; height: 150px; }
   .why, .about, .contact { grid-template-columns: 1fr; gap: 2.5rem; }
