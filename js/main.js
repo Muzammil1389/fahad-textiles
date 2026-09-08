@@ -5,10 +5,10 @@
    automatically (contact cards, footer, WhatsApp links).
    ========================================================= */
 const BUSINESS = {
-  whatsapp: "923000000000",              // digits only, with country code (92 for Pakistan)
-  phoneDisplay: "+92 300 0000000",       // how the number is shown on the page
-  email: "info@fahadtextiles.com",
-  address: "Your street address, City, Pakistan",
+  whatsapp: "923001234567",              // digits only, with country code (92 for Pakistan)
+  phoneDisplay: "+92 300 1234567",       // how the number is shown on the page
+  email: "fahadtextile@gmail.com",
+  address: "123 Textile Market, Chauburji, Lahore, Pakistan",
 };
 
 (function () {

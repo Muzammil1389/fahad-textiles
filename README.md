@@ -15,7 +15,7 @@ A single-page business website. No build step: open `index.html` in any browser,
 
 ## Before going live: things to replace
 
-1. **Phone, WhatsApp, email, address** — edit the `BUSINESS` block at the top of `js/main.js`. Every place on the page updates automatically.
+1. **Phone, WhatsApp, email, address** — currently set to +92 300 1234567, fahadtextile@gmail.com and 123 Textile Market, Chauburji, Lahore. To change them, edit the `BUSINESS` block at the top of `js/main.js`; every place on the page updates automatically.
 2. **Social links** — in `index.html`, search for `Replace # with your social links` and put in your Facebook, Instagram and TikTok URLs.
 3. **Photos** — the site uses stock photos from `assets/img/`. To show your own work, replace any file there with a photo of the same name, or change the `src` in `index.html`.
 4. **Testimonials** — the three quotes are sample text. Replace them with real client feedback or remove the section.
