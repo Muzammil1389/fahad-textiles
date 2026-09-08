@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahad Textiles | Custom Embroidery, Uniforms, Fabric &amp; Printing</title>
+  <meta name="description" content="Fahad Textiles offers custom embroidery on garments, corporate and school uniforms, wholesale fabric supply and screen, DTF and sublimation printing. Request a quote today.">
+  <meta property="og:title" content="Fahad Textiles">
+  <meta property="og:description" content="Custom embroidery, uniforms, fabric supply and printing for brands, schools and businesses.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Reusable brand mark (recreated from the FT logo) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <clipPath id="ft-f"><polygon points="-2,-2 232,-2 170,80 -2,80"/></clipPath>
+      <clipPath id="ft-t"><polygon points="262,-2 200,80 470,80 470,-2"/></clipPath>
+      <symbol id="ft-logo" viewBox="0 0 460 340">
+        <g fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="butt" stroke-linejoin="miter">
+          <g clip-path="url(#ft-f)">
+            <path d="M7 340V7H240"/><path d="M35 340V35H240"/><path d="M63 340V63H240"/>
+          </g>
+          <path d="M7 80V340"/><path d="M35 80V340"/><path d="M63 80V340"/>
+          <path d="M56 174H192"/><path d="M56 202H180"/><path d="M56 230H168"/>
+          <g clip-path="url(#ft-t)">
+            <path d="M190 7H450"/><path d="M190 35H450"/><path d="M190 63H320"/>
+          </g>
+          <path d="M320 56V340"/><path d="M348 84V340"/><path d="M376 340V63H450"/>
+        </g>
+      </symbol>
+      <!-- Icons -->
+      <symbol id="i-needle" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 21l6-6M9 15l9-9a2.1 2.1 0 013 3l-9 9-3 0 0-3zM18 3l3 3M4 12c3-1 5 1 8 0"/></symbol>
+      <symbol id="i-shirt" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8 3l4 2 4-2 5 4-2 4-2-1v11H7V10l-2 1-2-4z"/></symbol>
+      <symbol id="i-roll" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 7a3 3 0 106 0 3 3 0 00-6 0zM7 4h11l3 3v10H7M4 7v10a3 3 0 006 0M13 10h5M13 14h5"/></symbol>
+      <symbol id="i-print" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6 9V3h12v6M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v7H6z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5l2.5 2.5L16 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 16V4m0 0l-4 4m4-4l4 4M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3"/></symbol>
+      <symbol id="i-quote" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-4M9 3l12 0v0M8 12h8M8 16h5M14 3v6h6"/></symbol>
+      <symbol id="i-machine" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 20h18M5 20V9a2 2 0 012-2h10a2 2 0 012 2v11M9 7V4h6v3M9 12h6M9 16h6"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6h11v10H3zM14 9h4l3 3v4h-7zM6 19a2 2 0 100-4 2 2 0 000 4zM17 19a2 2 0 100-4 2 2 0 000 4z"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zM3 7l9 6 9-6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11zM12 12a2 2 0 100-4 2 2 0 000 4z"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 12 12 0 004.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6"/></symbol>
+      <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3a4 4 0 00-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8z"/></symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+      <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16 3c.3 2.3 1.7 3.7 4 4v3.2a7 7 0 01-4-1.3V15a6 6 0 11-6-6h.5v3.3a2.8 2.8 0 102.3 2.7V3H16z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="top">
+    <div class="container">
+      <a class="brand" href="#top" aria-label="Fahad Textiles home">
+        <svg class="brand-mark" aria-hidden="true"><use href="#ft-logo"/></svg>
+        <span>
+          <span class="brand-name">Fahad Textiles</span>
+          <span class="brand-tag">Embroidery &amp; Textile</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-primary">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <span class="eyebrow">Embroidery · Uniforms · Fabric · Printing</span>
+        <h1>Stitched with precision.<br>Made for <em>your brand.</em></h1>
+        <p class="lead">Fahad Textiles brings your logo and designs to life on garments and fabric. From single-piece custom embroidery to bulk corporate uniforms, we deliver clean work, on time, at honest prices.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Request a quote <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a href="#work" class="btn btn-outline">See our work</a>
+        </div>
+        <ul class="hero-points">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Sample before production</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Bulk &amp; small orders</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Nationwide delivery</li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <div class="logo-card">
+          <svg aria-label="Fahad Textiles logo"><use href="#ft-logo"/></svg>
+        </div>
+        <div class="float-chip chip-1">
+          <svg aria-hidden="true"><use href="#i-needle"/></svg>
+          <div>Custom embroidery<small>Logos · names · monograms</small></div>
+        </div>
+        <div class="float-chip chip-2">
+          <svg aria-hidden="true"><use href="#i-truck"/></svg>
+          <div>On-time delivery<small>Across Pakistan</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STRIP ================= -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Custom Embroidery</span><span>Corporate Uniforms</span><span>School Uniforms</span><span>Fabric Supply</span><span>Screen Printing</span><span>DTF Printing</span><span>Sublimation</span><span>Caps &amp; Jackets</span>
+      <span>Custom Embroidery</span><span>Corporate Uniforms</span><span>School Uniforms</span><span>Fabric Supply</span><span>Screen Printing</span><span>DTF Printing</span><span>Sublimation</span><span>Caps &amp; Jackets</span>
+    </div>
+  </div>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>Everything textile, under one roof</h2>
+        <p>Four core services that cover the full journey, from raw fabric to a finished, branded garment.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service reveal">
+          <div class="service-icon"><svg aria-hidden="true"><use href="#i-needle"/></svg></div>
+          <h3>Custom Embroidery</h3>
+          <p>Durable, detailed embroidery of logos, names and artwork on almost any garment.</p>
+          <ul>
+            <li>Polo shirts, t-shirts &amp; hoodies</li>
+            <li>Caps, jackets &amp; aprons</li>
+            <li>Towels, bags &amp; patches</li>
+            <li>Logo digitizing included</li>
+          </ul>
+        </article>
+        <article class="service reveal" data-delay="1">
+          <div class="service-icon"><svg aria-hidden="true"><use href="#i-shirt"/></svg></div>
+          <h3>Corporate &amp; School Uniforms</h3>
+          <p>Bulk uniform production with consistent sizing, branding and finishing.</p>
+          <ul>
+            <li>Offices, hospitals &amp; hotels</li>
+            <li>Schools &amp; academies</li>
+            <li>Security &amp; workwear</li>
+            <li>Sports teams &amp; clubs</li>
+          </ul>
+        </article>
+        <article class="service reveal" data-delay="2">
+          <div class="service-icon"><svg aria-hidden="true"><use href="#i-roll"/></svg></div>
+          <h3>Fabric &amp; Textile Supply</h3>
+          <p>Quality fabric by the meter or by the roll at wholesale rates.</p>
+          <ul>
+            <li>Cotton, twill &amp; drill</li>
+            <li>Poly-cotton blends &amp; fleece</li>
+            <li>Linen &amp; lawn</li>
+            <li>Swatches available on request</li>
+          </ul>
+        </article>
+        <article class="service reveal" data-delay="3">
+          <div class="service-icon"><svg aria-hidden="true"><use href="#i-print"/></svg></div>
+          <h3>Printing</h3>
+          <p>Vibrant, long-lasting prints for events, merchandise and sports kits.</p>
+          <ul>
+            <li>Screen printing</li>
+            <li>DTF (direct-to-film)</li>
+            <li>Sublimation</li>
+            <li>Full-colour artwork</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="stitch"></div>
+
+  <!-- ================= WHY US ================= -->
+  <section class="section section-alt">
+    <div class="container why">
+      <div class="reveal">
+        <span class="eyebrow">Why Fahad Textiles</span>
+        <h2 style="font-size:clamp(1.8rem,3.2vw,2.6rem);color:var(--blue-deep);margin-bottom:1.6rem">Quality you can feel in every stitch</h2>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="num">01</div>
+            <div><h3>Approval before we produce</h3><p>You receive a stitched or printed sample for approval, so what you see is exactly what you get.</p></div>
+          </div>
+          <div class="why-item">
+            <div class="num">02</div>
+            <div><h3>Fair pricing, no hidden costs</h3><p>Clear quotes with digitizing and setup included. Bulk discounts for larger orders.</p></div>
+          </div>
+          <div class="why-item">
+            <div class="num">03</div>
+            <div><h3>Deadlines that are kept</h3><p>We plan production around your date, whether it is a school term, a launch or an event.</p></div>
+          </div>
+          <div class="why-item">
+            <div class="num">04</div>
+            <div><h3>One partner for the whole job</h3><p>Fabric, stitching, embroidery, printing and packing handled in one place.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" data-delay="1">
+        <div class="why-panel">
+          <svg class="brand-mark" aria-hidden="true"><use href="#ft-logo"/></svg>
+          <h3>Built for businesses, schools and teams</h3>
+          <p>Whether you need 20 embroidered polos for your staff or thousands of uniforms for a school, we scale with you and keep every piece consistent.</p>
+          <div class="tags">
+            <span>Companies</span><span>Schools</span><span>Hospitals</span><span>Restaurants</span><span>Sports clubs</span><span>Events</span><span>Brands</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>From idea to finished garment in four steps</h2>
+        <p>A simple process that keeps you informed at every stage.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-icon"><svg aria-hidden="true"><use href="#i-upload"/></svg></div>
+          <h3>Share your design</h3>
+          <p>Send us your logo or idea on WhatsApp or email, with the garment type and quantity.</p>
+        </div>
+        <div class="step reveal" data-delay="1">
+          <div class="step-icon"><svg aria-hidden="true"><use href="#i-quote"/></svg></div>
+          <h3>Quote &amp; sample</h3>
+          <p>We send a clear quote and a sample for your approval before any bulk work begins.</p>
+        </div>
+        <div class="step reveal" data-delay="2">
+          <div class="step-icon"><svg aria-hidden="true"><use href="#i-machine"/></svg></div>
+          <h3>Production</h3>
+          <p>Your order is stitched, embroidered or printed and checked piece by piece.</p>
+        </div>
+        <div class="step reveal" data-delay="3">
+          <div class="step-icon"><svg aria-hidden="true"><use href="#i-truck"/></svg></div>
+          <h3>Delivery</h3>
+          <p>Packed and delivered to your door anywhere in Pakistan, or ready for pickup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORK ================= -->
+  <section class="section section-alt" id="work">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Our work</span>
+        <h2>Recent projects</h2>
+        <p>A selection of embroidery, uniform and print work. Replace these tiles with photos of your own pieces.</p>
+      </div>
+      <div class="gallery">
+        <!-- To use a real photo: add <img src="assets/work/your-photo.jpg" alt="..."> inside the article and remove the .work-ph div -->
+        <article class="work reveal">
+          <div class="work-ph"><svg aria-hidden="true"><use href="#i-needle"/></svg></div>
+          <div class="work-body"><span>Embroidery</span><h3>Corporate polo shirts</h3></div>
+        </article>
+        <article class="work reveal" data-delay="1">
+          <div class="work-ph"><svg aria-hidden="true"><use href="#i-shirt"/></svg></div>
+          <div class="work-body"><span>Uniforms</span><h3>School uniform set</h3></div>
+        </article>
+        <article class="work reveal" data-delay="2">
+          <div class="work-ph"><svg aria-hidden="true"><use href="#i-needle"/></svg></div>
+          <div class="work-body"><span>Embroidery</span><h3>Embroidered caps</h3></div>
+        </article>
+        <article class="work reveal">
+          <div class="work-ph"><svg aria-hidden="true"><use href="#i-print"/></svg></div>
+          <div class="work-body"><span>Printing</span><h3>Event t-shirts</h3></div>
+        </article>
+        <article class="work reveal" data-delay="1">
+          <div class="work-ph"><svg aria-hidden="true"><use href="#i-roll"/></svg></div>
+          <div class="work-body"><span>Fabric</span><h3>Wholesale fabric rolls</h3></div>
+        </article>
+        <article class="work reveal" data-delay="2">
+          <div class="work-ph"><svg aria-hidden="true"><use href="#i-print"/></svg></div>
+          <div class="work-body"><span>Sublimation</span><h3>Sports team kits</h3></div>
+        </article>
+      </div>
+      <p class="gallery-note">Want to see more? Ask for our full catalogue on WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about-visual reveal">
+        <div class="about-tile tall"><svg aria-hidden="true"><use href="#ft-logo"/></svg></div>
+        <div class="about-tile accent"><svg aria-hidden="true"><use href="#i-needle"/></svg></div>
+        <div class="about-tile"><svg aria-hidden="true"><use href="#i-roll"/></svg></div>
+      </div>
+      <div class="about-text reveal" data-delay="1">
+        <span class="eyebrow">About us</span>
+        <h2 style="font-size:clamp(1.8rem,3.2vw,2.6rem);color:var(--blue-deep);margin-bottom:1rem">A textile workshop built on craft and trust</h2>
+        <p>Fahad Textiles started with a simple goal: give businesses, schools and individuals a reliable place for embroidery and textile work, without the runaround.</p>
+        <p>Today we handle everything from a single embroidered jacket to full uniform programmes. Every order is checked by hand before it leaves our workshop, because your brand is on it.</p>
+        <div class="about-stats">
+          <div class="stat"><strong>Sample first</strong><span>Approval before bulk</span></div>
+          <div class="stat"><strong>4 services</strong><span>Under one roof</span></div>
+          <div class="stat"><strong>Nationwide</strong><span>Delivery across Pakistan</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Client feedback</span>
+        <h2>What our customers say</h2>
+      </div>
+      <div class="quotes">
+        <!-- Replace these with real client feedback -->
+        <blockquote class="quote reveal">
+          <p>The embroidery on our staff polos came out sharp and the colours matched our logo exactly. Delivered before the date we agreed.</p>
+          <footer><div class="avatar">A</div><div><strong>Ahmed R.</strong><span>Operations Manager, Restaurant chain</span></div></footer>
+        </blockquote>
+        <blockquote class="quote reveal" data-delay="1">
+          <p>We ordered uniforms for the whole school. Sizing was consistent across every batch and the fabric has held up well through the term.</p>
+          <footer><div class="avatar">S</div><div><strong>Sana M.</strong><span>Principal, Private school</span></div></footer>
+        </blockquote>
+        <blockquote class="quote reveal" data-delay="2">
+          <p>Fast replies on WhatsApp, a sample within days, and the printed kits for our cricket team looked professional. Will order again.</p>
+          <footer><div class="avatar">B</div><div><strong>Bilal K.</strong><span>Team captain, Sports club</span></div></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions we hear often</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Is there a minimum order quantity?</summary>
+          <p>We accept small orders for embroidery and printing. Bulk pricing starts at larger quantities. Tell us your quantity and we will quote accordingly.</p>
+        </details>
+        <details>
+          <summary>How long does an order take?</summary>
+          <p>Samples are usually ready within a few days. Production time depends on quantity and complexity, and we confirm a delivery date with your quote.</p>
+        </details>
+        <details>
+          <summary>What file format should I send for my logo?</summary>
+          <p>A vector file (AI, EPS, PDF or SVG) gives the best result. A clear, high-resolution PNG or JPG also works. We digitize the design for embroidery at no extra cost.</p>
+        </details>
+        <details>
+          <summary>Can you supply the garments as well as the embroidery?</summary>
+          <p>Yes. We can source shirts, polos, caps, jackets and uniform fabric, or work on garments you provide.</p>
+        </details>
+        <details>
+          <summary>Do you deliver outside your city?</summary>
+          <p>Yes. We ship orders across Pakistan through trusted courier partners. Delivery charges are shown in your quote.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta">
+    <div class="container">
+      <div>
+        <h2>Ready to put your brand on fabric?</h2>
+        <p>Send your design and quantity. We reply with a quote, usually the same day.</p>
+      </div>
+      <a class="btn btn-light" href="#contact">Get a quote <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's talk about your order</h2>
+        <p>Reach us on WhatsApp for the quickest reply, or fill in the form and we will get back to you.</p>
+      </div>
+      <div class="contact">
+        <div class="contact-cards reveal">
+          <!-- PLACEHOLDER CONTACT DETAILS: replace phone, email and address below -->
+          <div class="contact-card">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></div>
+            <div><h3>Phone / WhatsApp</h3><p><a href="tel:+923000000000" data-phone>+92 300 0000000</a></p></div>
+          </div>
+          <div class="contact-card">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-mail"/></svg></div>
+            <div><h3>Email</h3><p><a href="mailto:info@fahadtextiles.com" data-email>info@fahadtextiles.com</a></p></div>
+          </div>
+          <div class="contact-card">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-pin"/></svg></div>
+            <div><h3>Workshop</h3><p data-address>Your street address, City, Pakistan</p></div>
+          </div>
+          <div class="contact-card">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-clock"/></svg></div>
+            <div><h3>Hours</h3><p>Monday to Saturday, 9:00 am to 7:00 pm</p></div>
+          </div>
+        </div>
+        <form class="form reveal" data-delay="1" id="quote-form" novalidate>
+          <h3>Request a quote</h3>
+          <p>Fill in the details and send them straight to our WhatsApp.</p>
+          <div class="form-grid">
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" placeholder="Full name" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone / WhatsApp</label>
+              <input id="f-phone" name="phone" type="tel" placeholder="+92 3XX XXXXXXX" required>
+            </div>
+            <div class="field">
+              <label for="f-service">Service</label>
+              <select id="f-service" name="service" required>
+                <option value="">Select a service</option>
+                <option>Custom embroidery</option>
+                <option>Corporate / school uniforms</option>
+                <option>Fabric supply</option>
+                <option>Screen printing</option>
+                <option>DTF printing</option>
+                <option>Sublimation</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-qty">Quantity (approx.)</label>
+              <input id="f-qty" name="quantity" type="number" min="1" placeholder="e.g. 50">
+            </div>
+            <div class="field full">
+              <label for="f-msg">Details</label>
+              <textarea id="f-msg" name="message" placeholder="Garment type, colours, placement of logo, deadline..."></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-whatsapp"><svg aria-hidden="true"><use href="#i-wa"/></svg> Send on WhatsApp</button>
+            <button type="button" class="btn btn-outline" id="send-email"><svg aria-hidden="true"><use href="#i-mail"/></svg> Send by email</button>
+            <p class="form-note" id="form-note">Your message opens in WhatsApp or your email app. Nothing is stored on this website.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#top">
+            <svg class="brand-mark" aria-hidden="true"><use href="#ft-logo"/></svg>
+            <span><span class="brand-name">Fahad Textiles</span><span class="brand-tag">Embroidery &amp; Textile</span></span>
+          </a>
+          <p style="margin-top:1.2rem;max-width:22rem">Custom embroidery, uniforms, fabric supply and printing for businesses, schools and teams across Pakistan.</p>
+          <div class="socials">
+            <!-- Replace # with your social links -->
+            <a href="#" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg><use href="#i-tiktok"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Custom embroidery</a></li>
+            <li><a href="#services">Uniforms</a></li>
+            <li><a href="#services">Fabric supply</a></li>
+            <li><a href="#services">Printing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#work">Our work</a></li>
+            <li><a href="#process">How it works</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+923000000000" data-phone>+92 300 0000000</a></li>
+            <li><a href="mailto:info@fahadtextiles.com" data-email>info@fahadtextiles.com</a></li>
+            <li><span data-address>Your street address, City, Pakistan</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Fahad Textiles. All rights reserved.</span>
+        <span>Embroidery · Uniforms · Fabric · Printing</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" id="wa-float" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
